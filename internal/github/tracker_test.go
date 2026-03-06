@@ -39,12 +39,12 @@ func TestExtractIdentifier(t *testing.T) {
 		{"gh-1", "1"},
 		{"gh-123", "123"},
 		{"gh-42", "42"},
-		{"gh-", ""},       // no number
-		{"gh-abc", ""},    // not a number
-		{"jira-123", ""},  // wrong prefix
-		{"", ""},          // empty
-		{"gh-0", "0"},     // zero is valid
-		{"gh--1", ""},     // negative
+		{"gh-", ""},      // no number
+		{"gh-abc", ""},   // not a number
+		{"jira-123", ""}, // wrong prefix
+		{"", ""},         // empty
+		{"gh-0", "0"},    // zero is valid
+		{"gh--1", ""},    // negative
 	}
 
 	for _, tt := range tests {

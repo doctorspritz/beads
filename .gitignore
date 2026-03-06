@@ -123,3 +123,5 @@ bd_test
 # Gas Town (added by gt)
 .logs/
 .beads/
+
+.cache/
