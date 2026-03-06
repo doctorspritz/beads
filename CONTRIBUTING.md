@@ -360,3 +360,14 @@ Be respectful and professional in all interactions. We're here to build somethin
 ---
 
 Thank you for contributing to bd! 🎉
+
+## Review Guard
+
+Run these before pushing:
+
+```bash
+bash scripts/review_guard.sh
+bash scripts/validate_repo.sh
+```
+
+`review_guard.sh` fails high-risk code changes that do not come with matching test changes.
